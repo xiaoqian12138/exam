@@ -1,0 +1,25 @@
+@import url('./common.css');
+@import url('./bootstrap.css');
+
+header{
+    display: flex;
+    justify-content: center;
+}
+header form{
+    display: flex;
+    padding: 20px;
+}
+header form div{
+    padding: 0 10px;
+}
+header form button{
+    height: 33px;
+    padding: 0 10px;
+}
+
+main thead{
+    background-color: #eee;
+}
+main tbody tr td:nth-child(2){
+    width: 1000px;
+}

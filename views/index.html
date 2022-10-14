@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By:小浅</title>
+    <link rel="stylesheet" href="../aessets/css/index.css">
+    <script src="../aessets/js/jquery.js"></script>
+    <script src="../aessets/js/bootstrap.min.js"></script>
+    <script defer src="../aessets/js/index.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <form>
+            <div class="form-group">   
+                <input type="text" class="form-control titleInp"  placeholder="标题">
+            </div>
+            <div class="form-group">   
+                <input type="text" class="form-control userInp"  placeholder="发布人">
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control dateInp">
+            </div>
+            <button type="submit" class="btn btn-primary addbtn
+            ">新增</button>
+        </form>
+    </header>
+    <main>
+        <table class='table table-hover table-bordered'>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>标题</th>
+                    <th>发布人</th>
+                    <th>发布时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+    </main>
+    <aside>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">编辑</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control titleMod"  placeholder="标题">
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control userMod"  placeholder="发布人">
+                </div>
+                <div class="modal-body">
+                    <input type="date" class="form-control dateMod">
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary surebtn" data-dismiss="modal">更新</button>
+                  <button type="button" class="btn btn-primary cancelbtn" data-dismiss="modal">取消</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+    </aside>
+</body>
+
+</html>
